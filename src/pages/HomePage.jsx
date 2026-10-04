@@ -1,11 +1,13 @@
-import React from 'react'
+import AboutHero from "../components/AboutHero";
+import TopicCards from "../components/TopicCards";
 
-const homepage = () => {
+const HomePage = () => {
   return (
     <div>
-      Homepage
+      <AboutHero />
+      <TopicCards />
     </div>
-  )
-}
+  );
+};
 
-export default homepage
+export default HomePage;

@@ -17,6 +17,17 @@
 
 @import "tailwindcss";
 
+:root {
+  --acm-blue: #0e2089;
+  --acm-blue-border: #eff6ff;
+  --acm-blue-shadow: rgba(37, 99, 235, 0.14);
+  --font-body: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
 /* Test class to verify font is loading */
 .test-minecraft {
   font-family: 'MinecraftRegular', monospace;
