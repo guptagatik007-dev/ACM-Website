@@ -1,18 +1,13 @@
-import React from 'react'
-import HeroSection from '../components/HeroSection'
-import AboutSection from '../components/AboutSection'
-import ContactSection from '../components/ContactSection'
-import Footer from '../components/Footer'
+import AboutHero from "../components/AboutHero";
+import TopicCards from "../components/TopicCards";
 
 const HomePage = () => {
   return (
-    <>
-      <HeroSection />
-      <AboutSection />
-      <ContactSection/>
-      <Footer/>
-    </>
-  )
-}
+    <div>
+      <AboutHero />
+      <TopicCards />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
