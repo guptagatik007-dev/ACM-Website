@@ -1,35 +1,54 @@
-/* Minecraft Fonts */
-@font-face {
-  font-family: 'MinecraftRegular';
-  src: url('/fonts/MinecraftRegular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'MinecraftTen';
-  src: url('/fonts/MinecraftTen.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
 @import "tailwindcss";
 
 :root {
-  --acm-blue: #0e2089;
+  --acm-blue: #071f2c;
   --acm-blue-border: #eff6ff;
   --acm-blue-shadow: rgba(37, 99, 235, 0.14);
-  --font-body: "Avenir Next", "Segoe UI", sans-serif;
 }
 
-body {
-  font-family: var(--font-body);
+* {
+  font-family: "PT Serif Caption", serif;
 }
 
-/* Test class to verify font is loading */
-.test-minecraft {
-  font-family: 'MinecraftRegular', monospace;
-  font-size: 2rem;
+.hero-section::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  inset: -10%;
+  background: url("/computers.png") center / cover no-repeat;
+  animation: hero-background-zoom 1.8s ease-out both;
+}
+
+.hero-content {
+  animation: hero-content-reveal 0.9s 1.1s ease-out both;
+}
+
+@keyframes hero-background-zoom {
+  from {
+    transform: scale(3);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes hero-content-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-section::before,
+  .hero-content {
+    animation: none;
+  }
 }
