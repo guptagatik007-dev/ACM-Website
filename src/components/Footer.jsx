@@ -1,19 +1,41 @@
+import { NavLink } from "react-router-dom";
+
 const footerGroups = [
   {
     title: "About",
-    links: ["About ACM", "Our Chapter", "Leadership", "Contact Us"],
+    links: [
+      ["About ACM", "/about-acm"],
+      ["Our Chapter", "/chapter"],
+      ["Leadership", "/team"],
+      ["Contact Us", "/contact"],
+    ],
   },
   {
     title: "Connect",
-    links: ["Events", "Communities", "Get Involved", "Newsletter"],
+    links: [
+      ["Events", "/events"],
+      ["Communities", "/communities"],
+      ["Get Involved", "/get-involved"],
+      ["Newsletter", "/newsletter"],
+    ],
   },
   {
     title: "Learn",
-    links: ["Digital Library", "Learning Center", "Publications", "Resources"],
+    links: [
+      ["Digital Library", "/digital-library"],
+      ["Learning Center", "/learning-center"],
+      ["Publications", "/publications"],
+      ["Resources", "/resources"],
+    ],
   },
   {
     title: "Policies",
-    links: ["Privacy", "Accessibility", "Terms of Use", "Code of Conduct"],
+    links: [
+      ["Privacy", "/privacy"],
+      ["Accessibility", "/accessibility"],
+      ["Terms of Use", "/terms"],
+      ["Code of Conduct", "/code-of-conduct"],
+    ],
   },
 ];
 
@@ -28,14 +50,14 @@ const Footer = () => {
                 {title}
               </h2>
               <ul className="mt-5 space-y-3">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
+                {links.map(([label, to]) => (
+                  <li key={to}>
+                    <NavLink
+                      to={to}
                       className="text-sm text-slate-500 transition-colors hover:text-(--acm-blue)"
                     >
-                      {link}
-                    </a>
+                      {label}
+                    </NavLink>
                   </li>
                 ))}
               </ul>
