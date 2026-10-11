@@ -2,7 +2,7 @@ const AboutHero = () => {
   return (
     <section
       id="about"
-      className="hero-section relative isolate mx-[6vw] my-14 flex min-h-[calc(100svh-238px)] max-w-none items-center overflow-hidden rounded-3xl border-(--acm-blue) bg-white/55 px-6 py-24 shadow-[0_12px_32px_var(--acm-blue-shadow)] backdrop-blur-xl sm:mx-[20vh] sm:py-32"
+      className="hero-section relative isolate mx-[6vw] my-14 flex min-h-[calc(100svh-238px)] max-w-none items-center overflow-hidden rounded-3xl border-acm-blue) bg-white/55 px-6 py-24 shadow-[0_12px_32px_var(--acm-blue-shadow)] backdrop-blur-xl sm:mx-[20vh] sm:py-32"
       aria-labelledby="about-title"
     >
       <div className="hero-content relative z-10  max-w-3xl">

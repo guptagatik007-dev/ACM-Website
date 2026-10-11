@@ -75,7 +75,7 @@ const TeamPage = () => {
       >
         {teamMembers.map(({ name, role, position, image }) => (
           <article key={name} className="group">
-            <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-slate-100 shadow-[0_12px_28px_var(--acm-blue-shadow)]">
+            <div className="aspect-4/5 overflow-hidden rounded-2xl bg-slate-100 shadow-[0_12px_28px_var(--acm-blue-shadow)]">
               <img
                 src={image}
                 alt={name}
