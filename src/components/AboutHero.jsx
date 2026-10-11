@@ -12,7 +12,7 @@ const AboutHero = () => {
         >
           Welcome to ACM Chapter IIT Mandi
         </h1>
-        <div className="mt-6 max-w-2xl rounded-2xl border border-white/30 bg-white/15 p-5 shadow-lg backdrop-blur-md">
+        <div className="hero_desc mt-6 max-w-2xl rounded-2xl border border-white/30 bg-white/15 p-5 shadow-lg backdrop-blur-md">
           <p className="text-lg leading-8 text-white sm:text-xl">
             We are the ACM student chapter at IIT Mandi, bringing together
             students who are curious about technology, problem-solving, and
